@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TTS-UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>TTS-UI (GPT Speech Processor)</h1>
+
+    <form id="speechForm">
+        <textarea id="text-input" placeholder="Enter text" rows="4" required></textarea>
+
+        <select id="model-select">
+            <option value="tts-1-hd">tts-1-hd</option>
+            <option value="tts-1">tts-1</option>
+        </select>
+
+        <select id="voice-select">
+            <option value="alloy">alloy</option>
+            <option value="echo">echo</option>
+            <option value="fable">fable</option>
+            <option value="onyx">onyx</option>
+            <option value="nova">nova</option>
+            <option value="shimmer">shimmer</option>
+        </select>
+
+        <button type="submit" id="text-to-speech-button">Generate Speech</button>
+
+    </form>
+
+    <form id="transcriptionForm">
+        <input type="file" id="fileInput" accept="audio/*" required>
+        <label id="fileInputLabel" for="fileInput">Select audio file</label>
+        <button type="submit" id="audio-transcription-button">Transcribe</button>
+        <label for="exportCheckbox">Export to text file</label>
+        <input type="checkbox" id="exportCheckbox">
+    </form>
+
+
+
+    <div id="transcriptionResult"></div>
+    <!-- Simple popup form to enter API key -->
+    <div id="apiKeyModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="apiKeyForm">
+                <label for="apiKey">Enter your OpenAI API Key:</label>
+                <input type="password" id="api-key-input" name="api-key-input">
+                <button type="submit" id="set-api-key-button">Save API Key</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
