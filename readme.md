@@ -1,4 +1,5 @@
 # TTS-UI (GPT Speech Processor) 
+![Alt text](image.png)
 ## Make sure your API key is set when using the program!
 
 TTS-UI is a web application designed to provide Text-to-Speech (TTS) and Speech-to-Text (STT) services. Users can input text to generate speech or transcribe spoken words into text format.
@@ -16,7 +17,6 @@ TTS-UI is a web application designed to provide Text-to-Speech (TTS) and Speech-
 - Obtain an API key from OpenAI for accessing the speech services.
 
 ## Setup and Installation
-
 ### Running the Express Server
 
 Before using the TTS-UI application, you need to set up and run the Express server backend that powers the API interactions. 
